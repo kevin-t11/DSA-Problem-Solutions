@@ -41,6 +41,36 @@ class Solution{
             }
         }
         
+        /*  second method */
+        /*
+        //4 movements
+        //D, L, R, U
+        
+        visited[x][y] = 1;
+        //Down
+        if(isSafe(x+1, y, m, visited, n))
+        {
+            solve(x+1, y, m, visited, ans, path + "D", n);
+        }
+        //Left
+        if(isSafe(x, y-1, m, visited, n))
+        {
+            solve(x, y-1, m, visited, ans, path + "L", n);
+        }
+        //Right
+        if(isSafe(x, y+1, m, visited, n))
+        {
+            solve(x, y+1, m, visited, ans, path + "R", n);
+        }
+        //Up
+        if(isSafe(x-1, y, m, visited, n))
+        {
+            solve(x-1, y, m, visited, ans, path + "U", n);
+        }
+        visited[x][y] = 0;
+        
+        */
+        
     }
     
     vector<string> findPath(vector<vector<int>> &m, int n) {
